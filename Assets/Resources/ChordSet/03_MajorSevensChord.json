@@ -1,0 +1,52 @@
+{
+    "Chords": [
+        {
+            "ChordName": "CM7",
+            "Structure": "0b_1000_1001_0001_0000"
+        },
+        {
+            "ChordName": "C#M7",
+            "Structure": "0b_1100_0100_1000_0000"
+        },
+        {
+            "ChordName": "DM7",
+            "Structure": "0b_0110_0010_0100_0000"
+        },
+        {
+            "ChordName": "D#M7",
+            "Structure": "0b_0011_0001_0010_0000"
+        },
+        {
+            "ChordName": "EM7",
+            "Structure": "0b_0001_1000_1001_0000"
+        },
+        {
+            "ChordName": "FM7",
+            "Structure": "0b_1000_1100_0100_0000"
+        },
+        {
+            "ChordName": "F#M7",
+            "Structure": "0b_0100_0110_0010_0000"
+        },
+        {
+            "ChordName": "GM7",
+            "Structure": "0b_0010_0011_0001_0000"
+        },
+        {
+            "ChordName": "G#M7",
+            "Structure": "0b_1001_0001_1000_0000"
+        },
+        {
+            "ChordName": "AM7",
+            "Structure": "0b_0100_1000_1100_0000"
+        },
+        {
+            "ChordName": "A#M7",
+            "Structure": "0b_0010_0100_0110_0000"
+        },
+        {
+            "ChordName": "BM7",
+            "Structure": "0b_0001_0010_0011_0000"
+        }
+    ]
+}

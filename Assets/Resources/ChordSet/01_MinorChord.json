@@ -1,0 +1,52 @@
+{
+    "Chords": [
+        {
+            "ChordName": "Cm",
+            "Structure": "0b_1001_0001_0000_0000"
+        },
+        {
+            "ChordName": "C#m",
+            "Structure": "0b_0100_1000_1000_0000"
+        },
+        {
+            "ChordName": "Dm",
+            "Structure": "0b_0010_0100_0100_0000"
+        },
+        {
+            "ChordName": "D#m",
+            "Structure": "0b_0001_0010_0010_0000"
+        },
+        {
+            "ChordName": "Em",
+            "Structure": "0b_0000_1001_0001_0000"
+        },
+        {
+            "ChordName": "Fm",
+            "Structure": "0b_1000_0100_1000_0000"
+        },
+        {
+            "ChordName": "F#m",
+            "Structure": "0b_0100_0010_0100_0000"
+        },
+        {
+            "ChordName": "Gm",
+            "Structure": "0b_0010_0001_0010_0000"
+        },
+        {
+            "ChordName": "G#m",
+            "Structure": "0b_0001_0000_1001_0000"
+        },
+        {
+            "ChordName": "Am",
+            "Structure": "0b_1000_1000_0100_0000"
+        },
+        {
+            "ChordName": "A#m",
+            "Structure": "0b_0100_0100_0010_0000"
+        },
+        {
+            "ChordName": "Bm",
+            "Structure": "0b_0010_0010_0001_0000"
+        }
+    ]
+}

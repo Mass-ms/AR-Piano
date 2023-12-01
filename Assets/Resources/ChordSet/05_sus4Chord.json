@@ -1,0 +1,52 @@
+{
+    "Chords": [
+        {
+            "ChordName": "Csus4",
+            "Structure": "0b_1000_0101_0000_0000"
+        },
+        {
+            "ChordName": "C#sus4",
+            "Structure": "0b_0100_0010_1000_0000"
+        },
+        {
+            "ChordName": "Dsus4",
+            "Structure": "0b_0010_0001_0100_0000"
+        },
+        {
+            "ChordName": "D#sus4",
+            "Structure": "0b_0001_0000_1010_0000"
+        },
+        {
+            "ChordName": "Esus4",
+            "Structure": "0b_0000_1000_0101_0000"
+        },
+        {
+            "ChordName": "Fsus4",
+            "Structure": "0b_1000_0100_0010_0000"
+        },
+        {
+            "ChordName": "F#sus4",
+            "Structure": "0b_0100_0010_0001_0000"
+        },
+        {
+            "ChordName": "Gsus4",
+            "Structure": "0b_1010_0001_0000_0000"
+        },
+        {
+            "ChordName": "G#sus4",
+            "Structure": "0b_0101_0000_1000_0000"
+        },
+        {
+            "ChordName": "Asus4",
+            "Structure": "0b_0010_1000_0100_0000"
+        },
+        {
+            "ChordName": "A#sus4",
+            "Structure": "0b_0001_0100_0010_0000"
+        },
+        {
+            "ChordName": "Bsus4",
+            "Structure": "0b_0000_1010_0001_0000"
+        }
+    ]
+}

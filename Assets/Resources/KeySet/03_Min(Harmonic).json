@@ -1,0 +1,55 @@
+{
+    "Id": "03",
+    "KeyName": "Min(Harmonic)",
+    "Scales": [
+        {
+            "ScaleName": "-Harmonic Min",
+            "DegreeName": "ImM7",
+            "ChordNote": "0b_1000_1000_1100_0000",
+            "TensionNote": "0b_0010_0000_0001_0000",
+            "AvoidNote": "0b_0000_0100_0000_0000"
+        },
+        {
+            "ScaleName": "-Locrian ♮6",
+            "DegreeName": "IIm7(b5)",
+            "ChordNote": "0b_0010_0100_0101_0000",
+            "TensionNote": "0b_0000_1000_1000_0000",
+            "AvoidNote": "0b_1000_0000_0000_0000"
+        },
+        {
+            "ScaleName": "-Ionian #5",
+            "DegreeName": "bIIIaugM7",
+            "ChordNote": "0b_1000_1000_1001_0000",
+            "TensionNote": "0b_0010_0000_0100_0000",
+            "AvoidNote": "0b_0000_0100_0000_0000"
+        },
+        {
+            "ScaleName": "-Dorian #4",
+            "DegreeName": "IVm7",
+            "ChordNote": "0b_1010_0100_0100_0000",
+            "TensionNote": "0b_0000_1000_1000_0000",
+            "AvoidNote": "0b_0000_0000_0000_0000"
+        },
+        {
+            "ScaleName": "-HMP5B",
+            "DegreeName": "V7",
+            "ChordNote": "0b_0010_1000_1001_0000",
+            "TensionNote": "0b_1000_0100_000_0000",
+            "AvoidNote": "0b_0000_0000_0100_0000"
+        },
+        {
+            "ScaleName": "-Lydian #2",
+            "DegreeName": "bVIM7(b5)",
+            "ChordNote": "0b_1000_1100_0100_0000",
+            "TensionNote": "0b_0010_0000_1001_0000",
+            "AvoidNote": "0b_0000_0000_0000_0000"
+        },
+        {
+            "ScaleName": "-SuperLoc.bb7",
+            "DegreeName": "VIIm7(b5)",
+            "ChordNote": "0b_0010_0100_1001_0000",
+            "TensionNote": "0b_0000_1000_0000_0000",
+            "AvoidNote": "0b_1000_0000_0100_0000"
+        }
+    ]
+}

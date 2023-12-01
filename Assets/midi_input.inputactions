@@ -1,0 +1,200 @@
+{
+    "name": "midi_input",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "aacee6ca-c7e7-456d-b43b-2b0c0d4e3b71",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "5d6c5687-cb57-4c20-bf27-58d6293ab964",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a1acf51d-fa89-4078-bcda-0a2215395f3b",
+                    "path": "<MidiDevice>/note048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b146a007-5186-4c7c-8513-53f5416d1028",
+                    "path": "<MidiDevice>/note050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "531c44b6-4351-4e65-b73b-ec41ee4441b2",
+                    "path": "<MidiDevice>/note052",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "31211245-9e6b-41dc-af24-bd9331d718b1",
+                    "path": "<MidiDevice>/note053",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0396fb8-7525-4696-9605-69f5cabf03fb",
+                    "path": "<MidiDevice>/note055",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1321c411-47ab-46dd-8f0b-00572023d6f4",
+                    "path": "<MidiDevice>/note057",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2555f3f7-81df-4b1d-a0c0-6464d09f03e5",
+                    "path": "<MidiDevice>/note059",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f8bdc84-5612-40d6-9a9f-2ced717e5e53",
+                    "path": "<MidiDevice>/note060",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4987ff8d-8a7d-45b0-b39a-7dffb754259f",
+                    "path": "<MidiDevice>/note062",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "603a4b14-88db-41ab-b3a3-9d62e05013d1",
+                    "path": "<MidiDevice>/note064",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7072a7ae-61e2-410a-9a8f-67b7cf82ae82",
+                    "path": "<MidiDevice>/note065",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "32258e6d-5fc5-42e8-aafe-6fefc5cf269f",
+                    "path": "<MidiDevice>/note067",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b2327c3-5f71-4e64-aa83-7ca969cdb3ac",
+                    "path": "<MidiDevice>/note069",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b5a6215-f54a-49d5-8ea9-3da95efba33d",
+                    "path": "<MidiDevice>/note071",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66c2ae04-066f-4174-8584-906c85169ae4",
+                    "path": "<MidiDevice>/note072",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "midi",
+            "bindingGroup": "midi",
+            "devices": [
+                {
+                    "devicePath": "<MidiDevice>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

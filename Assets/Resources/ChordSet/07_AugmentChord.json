@@ -1,0 +1,52 @@
+{
+    "Chords": [
+        {
+            "ChordName": "Caug",
+            "Structure": "0b_1000_1000_1000_0000"
+        },
+        {
+            "ChordName": "C#aug",
+            "Structure": "0b_0100_0100_0100_0000"
+        },
+        {
+            "ChordName": "Daug",
+            "Structure": "0b_0010_0010_0010_0000"
+        },
+        {
+            "ChordName": "D#aug",
+            "Structure": "0b_0001_0001_0001_0000"
+        },
+        {
+            "ChordName": "Eaug",
+            "Structure": "0b_1000_1000_1000_0000"
+        },
+        {
+            "ChordName": "Faug",
+            "Structure": "0b_0100_0100_0100_0000"
+        },
+        {
+            "ChordName": "F#aug",
+            "Structure": "0b_0010_0010_0010_0000"
+        },
+        {
+            "ChordName": "Gaug",
+            "Structure": "0b_0001_0001_0001_0000"
+        },
+        {
+            "ChordName": "G#aug",
+            "Structure": "0b_1000_1000_1000_0000"
+        },
+        {
+            "ChordName": "Aaug",
+            "Structure": "0b_0100_0100_0100_0000"
+        },
+        {
+            "ChordName": "A#aug",
+            "Structure": "0b_0010_0010_0010_0000"
+        },
+        {
+            "ChordName": "Baug",
+            "Structure": "0b_0001_0001_0001_0000"
+        }
+    ]
+}

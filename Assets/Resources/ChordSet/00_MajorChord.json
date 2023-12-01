@@ -1,0 +1,52 @@
+{
+    "Chords": [
+        {
+            "ChordName": "C",
+            "Structure": "0b_1000_1001_0000_0000"
+        },
+        {
+            "ChordName": "C#",
+            "Structure": "0b_0100_0100_1000_0000"
+        },
+        {
+            "ChordName": "D",
+            "Structure": "0b_0010_0010_0100_0000"
+        },
+        {
+            "ChordName": "D#",
+            "Structure": "0b_0001_0001_0010_0000"
+        },
+        {
+            "ChordName": "E",
+            "Structure": "0b_0000_1000_1001_0000"
+        },
+        {
+            "ChordName": "F",
+            "Structure": "0b_1000_0100_0100_0000"
+        },
+        {
+            "ChordName": "F#",
+            "Structure": "0b_0100_0010_0010_0000"
+        },
+        {
+            "ChordName": "G",
+            "Structure": "0b_0010_0001_0001_0000"
+        },
+        {
+            "ChordName": "G#",
+            "Structure": "0b_1001_0000_1000_0000"
+        },
+        {
+            "ChordName": "A",
+            "Structure": "0b_0100_1000_0100_0000"
+        },
+        {
+            "ChordName": "A#",
+            "Structure": "0b_0010_0100_0010_0000"
+        },
+        {
+            "ChordName": "B",
+            "Structure": "0b_0001_0010_0001_0000"
+        }
+    ]
+}

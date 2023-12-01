@@ -1,0 +1,52 @@
+{
+    "Chords": [
+        {
+            "ChordName": "Cdim",
+            "Structure": "0b_1001_0010_0000_0000"
+        },
+        {
+            "ChordName": "C#dim",
+            "Structure": "0b_0100_1001_0000_0000"
+        },
+        {
+            "ChordName": "Ddim",
+            "Structure": "0b_0010_0100_1000_0000"
+        },
+        {
+            "ChordName": "D#dim",
+            "Structure": "0b_0001_0010_0100_0000"
+        },
+        {
+            "ChordName": "Edim",
+            "Structure": "0b_0000_1001_0010_0000"
+        },
+        {
+            "ChordName": "Fdim",
+            "Structure": "0b_0000_0100_1001_0000"
+        },
+        {
+            "ChordName": "F#dim",
+            "Structure": "0b_1000_0010_0100_0000"
+        },
+        {
+            "ChordName": "Gdim",
+            "Structure": "0b_0100_0001_0010_0000"
+        },
+        {
+            "ChordName": "G#dim",
+            "Structure": "0b_0010_0000_1001_0000"
+        },
+        {
+            "ChordName": "Adim",
+            "Structure": "0b_1001_0000_0100_0000"
+        },
+        {
+            "ChordName": "A#dim",
+            "Structure": "0b_0100_1000_0010_0000"
+        },
+        {
+            "ChordName": "Bdim",
+            "Structure": "0b_0010_0100_0001_0000"
+        }
+    ]
+}
