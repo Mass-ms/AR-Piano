@@ -3,51 +3,51 @@
     "KeyName": "Min(Natural)",
     "Scales": [
         {
-            "ScaleName": "-Aeolian",
+            "ScaleName": "-Aeolian(NM)",
             "DegreeName": "Im7",
-            "ChordNote": "0b_1000_1001_0100_0000",
+            "ChordNote": "0b_1001_0001_0010_0000",
             "TensionNote": "0b_0010_0000_0001_0000",
             "AvoidNote": "0b_0000_0100_0000_0000"
         },
         {
-            "ScaleName": "-Locrian",
+            "ScaleName": "-Locrian(NM)",
             "DegreeName": "IIm7(b5)",
-            "ChordNote": "0b_0010_0100_0101_0000",
+            "ChordNote": "0b_1010_0100_1000_0000",
             "TensionNote": "0b_0000_1001_0000_0000",
             "AvoidNote": "0b_1000_0000_0000_0000"
         },
         {
-            "ScaleName": "-Ionian",
+            "ScaleName": "-Ionian(NM)",
             "DegreeName": "bIIIM7",
-            "ChordNote": "0b_1000_1001_0001_0000",
+            "ChordNote": "0b_0011_0001_0010_0000",
             "TensionNote": "0b_0010_0000_1000_0000",
             "AvoidNote": "0b_0000_0100_0000_0000"
         },
         {
-            "ScaleName": "-Dorian",
+            "ScaleName": "-Dorian(NM)",
             "DegreeName": "IVm7",
-            "ChordNote": "0b_1010_0100_0100_0000",
+            "ChordNote": "0b_1001_0100_1000_0000",
             "TensionNote": "0b_0000_1001_0000_0000",
             "AvoidNote": "0b_0000_0000_0001_0000"
         },
         {
-            "ScaleName": "-Phrigian",
+            "ScaleName": "-Phrigian(NM)",
             "DegreeName": "Vm7",
-            "ChordNote": "0b_0010_1001_0001_0000",
+            "ChordNote": "0b_0010_0101_0010_0000",
             "TensionNote": "0b_0000_0000_0100_0000",
             "AvoidNote": "0b_1000_0100_0000_0000"
         },
         {
-            "ScaleName": "-Lydian",
+            "ScaleName": "-Lydian(NM)",
             "DegreeName": "bVIM7",
-            "ChordNote": "0b_1000_1100_0100_0000",
+            "ChordNote": "0b_1001_0001_1000_0000",
             "TensionNote": "0b_0010_0001_0001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
-            "ScaleName": "-Mixolydian",
+            "ScaleName": "-Mixolydian(NM)",
             "DegreeName": "bVII7",
-            "ChordNote": "0b_0010_0101_0001_0000",
+            "ChordNote": "0b_0010_0100_1010_0000",
             "TensionNote": "0b_0010_0001_0001_0000",
             "AvoidNote": "0b_1000_0000_0000_0000"
         }

@@ -8,6 +8,9 @@ public class ScaleDetector : MonoBehaviour
     public ScaleManager scaleManager;
     public string scaleName = "";
     public string degreeName = "";
+    public ushort chordNote = 0;
+    public ushort tensionNote = 0;
+    public ushort avoidNote = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,11 @@ public class ScaleDetector : MonoBehaviour
             {
                 scaleName = scale.ScaleName;
                 degreeName = scale.DegreeName;
+                chordNote = scale.ChordNote;
+                tensionNote = scale.TensionNote;
+                avoidNote = scale.AvoidNote;
                 Debug.Log($"Scale: {scale.ScaleName}, Degree:{scale.DegreeName}");
+                break;
             }
         }
         

@@ -34,7 +34,7 @@ public class ScaleManager : MonoBehaviour
 
     private void LoadJson(byte transpose)
     {
-        var resouces = Resources.LoadAll("KeySet", typeof(TextAsset));
+        var resouces = Resources.LoadAll("KeySet/Maj", typeof(TextAsset));
         ScaleNote  scaleNote = new ScaleNote();
         byte k = 0;
         foreach (TextAsset asset in resouces)

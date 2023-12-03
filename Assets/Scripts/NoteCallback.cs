@@ -9,6 +9,7 @@ using TMPro;
 sealed class NoteCallback : MonoBehaviour
 {
     public NoteBitManager noteBitManager;
+    public int detectLimit = 60;
     
     void Start()
     {
@@ -40,7 +41,10 @@ sealed class NoteCallback : MonoBehaviour
                     )
                 );
                 */
-                noteBitManager.setCurrentBit((ushort)note.noteNumber);
+                if (note.noteNumber<=detectLimit)
+                {
+                    noteBitManager.setCurrentBit((ushort)note.noteNumber);
+                }
             };
 
             midiDevice.onWillNoteOff += (note) =>
