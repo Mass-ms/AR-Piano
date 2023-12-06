@@ -14,8 +14,8 @@ public class ScaleManager : MonoBehaviour
     {
         foreach (var scale in scaleList)
         {
-            Debug.Log($"ScaleName: {scale.ScaleName}, DegreeName: {scale.DegreeName}");
-            Debug.Log($"ChordNote: {ToString(scale.ChordNote)}, TensionNote: {ToString(scale.TensionNote)}, AvoidNote: {ToString(scale.AvoidNote)}");
+            //Debug.Log($"ScaleName: {scale.ScaleName}, DegreeName: {scale.DegreeName}");
+            //Debug.Log($"ChordNote: {ToString(scale.ChordNote)}, TensionNote: {ToString(scale.TensionNote)}, AvoidNote: {ToString(scale.AvoidNote)}");
         }
     }
 

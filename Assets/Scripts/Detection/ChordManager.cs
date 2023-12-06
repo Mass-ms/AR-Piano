@@ -33,7 +33,7 @@ public class ChordManager : MonoBehaviour
     {
         foreach (var chord in chordList)
         {
-            Debug.Log($"ChordName: {chord.ChordName}, Structure: {chord.StrcutureToString()}");
+            // Debug.Log($"ChordName: {chord.ChordName}, Structure: {chord.StrcutureToString()}");
         }
     }
 
