@@ -1819,6 +1819,7 @@ MonoBehaviour:
   chordNote: 0
   tensionNote: 0
   avoidNote: 0
+  debug: 0
 --- !u!114 &675952765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,6 +1847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chordDetector: {fileID: 675952767}
   scaleDetector: {fileID: 675952764}
+  debug: 0
 --- !u!114 &675952767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1860,7 +1862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chordManager: {fileID: 675952768}
   ChordName: 
-  prevChordName: 
+  debug: 0
 --- !u!114 &675952768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5584,9 +5586,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca5fdfcae1534e4198e0d8531a74a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleDetector: {fileID: 0}
   chordDetector: {fileID: 675952767}
-  transpose: 2
+  transpose: 0
   TMP: {fileID: 1723252221}
+  debug: 0
+  prevChordName: N.C.
+  currentChordName: N.C.
 --- !u!4 &1707125891
 Transform:
   m_ObjectHideFlags: 0
@@ -5659,7 +5665,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "{'Bm': '72%', 'Bm7': '22%', 'Bbdim': '5%'}\r"
+  m_text: Chord Predictor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

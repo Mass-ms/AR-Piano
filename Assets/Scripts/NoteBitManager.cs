@@ -6,6 +6,7 @@ public class NoteBitManager : MonoBehaviour
 {
     public ChordDetector chordDetector;
     public ScaleDetector scaleDetector;
+    public bool debug = false;
     /*
     public static NoteBitManager instance;
     private void Awake()
@@ -41,7 +42,10 @@ public class NoteBitManager : MonoBehaviour
         bit = (ushort)(bit >> shift);
 
         currentBit = (ushort)(currentBit | bit);
-        Debug.Log(ToString());
+        if (debug)
+        {
+            Debug.Log(ToString());
+        }
         chordDetector.DetectChordName(currentBit);
         scaleDetector.DetectScale(currentBit);
     }
@@ -55,7 +59,10 @@ public class NoteBitManager : MonoBehaviour
         bit = (ushort)(bit >> shift);
 
         currentBit = (ushort)(currentBit & ~bit);
-        Debug.Log(ToString());
+        if (debug)
+        {
+            Debug.Log(ToString());
+        }
         chordDetector.DetectChordName(currentBit);
         scaleDetector.DetectScale(currentBit); 
     }

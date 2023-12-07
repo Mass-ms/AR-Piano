@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +7,13 @@ using UnityEngine.UIElements;
 public class ScaleDetector : MonoBehaviour
 {
     public ScaleManager scaleManager;
+    public static event Action OnChordDetected;
     public string scaleName = "";
     public string degreeName = "";
     public ushort chordNote = 0;
     public ushort tensionNote = 0;
     public ushort avoidNote = 0;
+    public bool debug = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +37,11 @@ public class ScaleDetector : MonoBehaviour
                 chordNote = scale.ChordNote;
                 tensionNote = scale.TensionNote;
                 avoidNote = scale.AvoidNote;
-                Debug.Log($"Scale: {scale.ScaleName}, Degree:{scale.DegreeName}");
+                if (debug)
+                {
+                    Debug.Log($"Scale: {scale.ScaleName}, Degree:{scale.DegreeName}");
+                }
+                OnChordDetected?.Invoke();
                 break;
             }
         }

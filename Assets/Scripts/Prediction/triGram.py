@@ -3,6 +3,7 @@ from pychord import Chord
 import re
 import os
 import sys
+import io
 
 # ファイルからコード進行を読み込む関数
 def load_chord_progressions(file_path):
@@ -63,10 +64,9 @@ def predict_next_chord_with_probabilities(chord1, chord2, transpose, trigram_mod
         }
         return formatted_probabilities
     else:
-        return None
+        return "Not Matched"
 
 file_path = os.path.dirname(os.path.realpath(__file__)) + "\\dataset\\yoasobi_chord_progressions.txt"
-print(file_path)
 # ファイルからコード進行を読み込む
 progressions = load_chord_progressions(file_path)
 
@@ -78,6 +78,8 @@ trigram_model = build_trigram_model(progressions)
 #     print(f"Context: {context}, Probabilities: {probabilities}")
 
 # 引数から予測を返す
+
+print("context: " + sys.argv[1] + " =>  " + sys.argv[2] + "(" + sys.argv[3]+ ")")
 prevChord = Chord(sys.argv[1])
 currentChord = Chord(sys.argv[2])
 transpose = int(sys.argv[3])
@@ -85,4 +87,5 @@ prevChord.transpose(-transpose)
 currentChord.transpose(-transpose)
 
 predicted = predict_next_chord_with_probabilities(prevChord.chord, currentChord.chord, transpose, trigram_model)
+# predicted = predict_next_chord_with_probabilities('FM7', 'E7', 1, trigram_model)
 print(predicted)

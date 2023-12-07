@@ -1,5 +1,7 @@
 using System.Diagnostics;
 using System.IO;
+using System.Text;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class PythonUnity
@@ -11,13 +13,16 @@ public class PythonUnity
     // Start is called before the first frame update
     public static string Predict(string arg1, string arg2, int arg3)
     {
+
         ProcessStartInfo psi = new ProcessStartInfo(pyExePath)
         {
             UseShellExecute = false,
             CreateNoWindow = true,
             RedirectStandardOutput = true,
             RedirectStandardError = true,
-            Arguments = $"\"{pyCodePath}\" \"{arg1}\" \"{arg2}\"\"{arg3}\""
+            StandardOutputEncoding = Encoding.UTF8,
+            StandardErrorEncoding = Encoding.UTF8,
+            Arguments = $"\"{pyCodePath}\" \"{arg1}\" \"{arg2}\" \"{arg3}\""
         };
 
         Process process = Process.Start(psi);

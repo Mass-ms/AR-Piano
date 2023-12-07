@@ -7,19 +7,7 @@ public class ChordDetector : MonoBehaviour
 {
     public ChordManager chordManager;
     public string ChordName = "N.C.";
-    public string prevChordName = "N.C.";
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public static event Action OnChordDetected;
+    public bool debug = false;
 
     public void DetectChordName(ushort currentBit)
     {
@@ -34,7 +22,9 @@ public class ChordDetector : MonoBehaviour
             }
         }
         ChordName = chordName;
-        OnChordDetected?.Invoke();
-        Debug.Log(chordName);
+        if (debug)
+        {
+            Debug.Log(chordName);
+        }
     }
 }
