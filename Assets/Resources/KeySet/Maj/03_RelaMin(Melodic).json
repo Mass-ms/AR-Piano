@@ -4,49 +4,49 @@
     "Scales": [
         {
             "ScaleName": "-Melodic Min",
-            "DegreeName": "ImM7",
+            "DegreeName": "VImM7",
             "ChordNote": "0b_1000_1000_1100_0000",
             "TensionNote": "0b_0010_0010_0001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Dorian b2",
-            "DegreeName": "IIm7",
+            "DegreeName": "VIIm7",
             "ChordNote": "0b_0010_0010_0101_0000",
             "TensionNote": "0b_0000_1000_1000_0000",
             "AvoidNote": "0b_1000_0000_0000_0000"
         },
         {
             "ScaleName": "-Lydian Aug",
-            "DegreeName": "bIIIaugM7",
+            "DegreeName": "IaugM7",
             "ChordNote": "0b_1000_1000_1001_0000",
             "TensionNote": "0b_0010_0010_0100_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Lydian Dom",
-            "DegreeName": "IV7",
+            "DegreeName": "II7",
             "ChordNote": "0b_1010_0010_0100_0000",
             "TensionNote": "0b_0000_1000_1001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Mixolydian b6",
-            "DegreeName": "V7",
+            "DegreeName": "III7",
             "ChordNote": "0b_0010_1000_1001_0000",
             "TensionNote": "0b_1000_0010_0000_0000",
             "AvoidNote": "0b_0000_0000_0100_0000"
         },
         {
             "ScaleName": "-Locrian #2",
-            "DegreeName": "VIm7(b5)",
+            "DegreeName": "IVm7(b5)",
             "ChordNote": "0b_1000_1010_0100_0000",
             "TensionNote": "0b_0010_0000_1001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Altered",
-            "DegreeName": "VIIm7(b5)",
+            "DegreeName": "Vm7(b5)",
             "ChordNote": "0b_0010_0010_1001_0000",
             "TensionNote": "0b_0000_1000_0000_0000",
             "AvoidNote": "0b_1000_0000_0100_0000"
