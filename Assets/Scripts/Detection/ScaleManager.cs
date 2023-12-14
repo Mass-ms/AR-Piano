@@ -2,12 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using static Transposer;
 
 public class ScaleManager : MonoBehaviour
 {
     public List<Scale> scaleList = new List<Scale>();
     public byte transpose = 0;
+    public bool isSharp = true;
+    public string Key;
+    private string[,] keylist = { { "C/Am", "C#/A#m", "D/Bm", "D#/B#m", "E/C#m", "F/Dm", "F#/D#m", "G/Em", "G#/E#m", "A/F#m", "A#/F*m", "B/G#m" }, { "C/Am", "Db/Bbm", "D/Bm", "Eb/Cm", "Fb/Dbm", "F/Dm", "Gb/Ebm", "G/Em", "Ab/Fm", "Bbb/Gbm", "Bb/Gm", "Cb/Abm" } };
+ 
     // Start is called before the first frame update
 
     void Start()
@@ -22,12 +28,27 @@ public class ScaleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var keyboard = Keyboard.current;
+        if (keyboard == null)
+        {
+            if (keyboard.wKey.wasPressedThisFrame) {
+                transpose = (byte)((transpose+1)%12);
+                Key = keylist[Convert.ToInt32(isSharp), transpose];
+                LoadJson(transpose);
+            }
+            if (keyboard.sKey.wasPressedThisFrame)
+            {
+                transpose = (byte)((transpose-1) % 12);
+                Key = keylist[Convert.ToInt32(isSharp), transpose];
+                LoadJson(transpose);
+            }
+        }
     }
     
     private void Awake()
     {
         LoadJson(transpose);
+        Key = keylist[Convert.ToInt32(isSharp), transpose];
     }
     
 
