@@ -14,23 +14,6 @@ public class UIController : MonoBehaviour
     public ScaleDetector scaleDetector;
     public ScaleManager scaleManager;
 
-    Dictionary<int, string> keyDict = new Dictionary<int, string>()
-    {
-        {0,"C/Am" },
-        {1,"Db/Bbm" },
-        {2,"D/Bm" },
-        {3,"Eb/Cm" },
-        {4,"E/C#m" },
-        {5,"F/Dm" },
-        {6,"Gb/Ebm" },
-        {7,"G/Em" },
-        {8,"Ab/Fm" },
-        {9,"A/F#m" },
-        {10,"Bb/Gm" },
-        {11,"B/G#m" },
-     };
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +26,7 @@ public class UIController : MonoBehaviour
     {
         setChordName(chordDetector.ChordName);
         setDegreeName(scaleDetector.degreeName);
-        setKeyName(scaleManager.transpose);
+        setKeyName(scaleManager.Key);
         setScaleName(scaleDetector.scaleName);
     }
 
@@ -57,9 +40,9 @@ public class UIController : MonoBehaviour
         degree.text = degreeName;
     }
 
-    void setKeyName(int keyNum)
+    void setKeyName(string keyName)
     {
-        key.text = "Key:" + keyDict[keyNum];
+        key.text = "Key:" + keyName;
     }
     void setScaleName(string scaleName)
     {

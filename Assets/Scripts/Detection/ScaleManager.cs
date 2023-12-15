@@ -9,10 +9,10 @@ using static Transposer;
 public class ScaleManager : MonoBehaviour
 {
     public List<Scale> scaleList = new List<Scale>();
-    public byte transpose = 0;
+    public int transpose = 0;
     public bool isSharp = true;
     public string Key;
-    private string[,] keylist = { { "C/Am", "C#/A#m", "D/Bm", "D#/B#m", "E/C#m", "F/Dm", "F#/D#m", "G/Em", "G#/E#m", "A/F#m", "A#/F*m", "B/G#m" }, { "C/Am", "Db/Bbm", "D/Bm", "Eb/Cm", "Fb/Dbm", "F/Dm", "Gb/Ebm", "G/Em", "Ab/Fm", "Bbb/Gbm", "Bb/Gm", "Cb/Abm" } };
+    private string[,] keylist = { { "C/Am", "Db/Bbm", "D/Bm", "Eb/Cm", "Fb/Dbm", "F/Dm", "Gb/Ebm", "G/Em", "Ab/Fm", "Bbb/Gbm", "Bb/Gm", "Cb/Abm" }, { "C/Am", "C#/A#m", "D/Bm", "D#/B#m", "E/C#m", "F/Dm", "F#/D#m", "G/Em", "G#/E#m", "A/F#m", "A#/F*m", "B/G#m" } };
  
     // Start is called before the first frame update
 
@@ -29,18 +29,23 @@ public class ScaleManager : MonoBehaviour
     void Update()
     {
         var keyboard = Keyboard.current;
-        if (keyboard == null)
+        if (keyboard != null)
         {
-            if (keyboard.wKey.wasPressedThisFrame) {
-                transpose = (byte)((transpose+1)%12);
-                Key = keylist[Convert.ToInt32(isSharp), transpose];
+            if (keyboard.upArrowKey.wasPressedThisFrame) {
+                transpose = (transpose+1)%12;
+                Key = keylist[isSharp ? 1 : 0, transpose];
                 LoadJson(transpose);
             }
-            if (keyboard.sKey.wasPressedThisFrame)
+            if (keyboard.downArrowKey.wasPressedThisFrame)
             {
-                transpose = (byte)((transpose-1) % 12);
-                Key = keylist[Convert.ToInt32(isSharp), transpose];
+                transpose = transpose > 0 ? (transpose - 1) % 12 : (transpose + 11) % 12;
+                Key = keylist[isSharp ? 1 : 0, transpose];
                 LoadJson(transpose);
+            }
+            if (keyboard.rightShiftKey.wasPressedThisFrame)
+            {
+                isSharp = !isSharp;
+                Key = keylist[isSharp ? 1 : 0, transpose];
             }
         }
     }
@@ -53,8 +58,9 @@ public class ScaleManager : MonoBehaviour
     
 
 
-    private void LoadJson(byte transpose)
+    private void LoadJson(int transpose)
     {
+        scaleList.Clear();
         var resouces = Resources.LoadAll("KeySet/Maj", typeof(TextAsset));
         ScaleNote  scaleNote = new ScaleNote();
         byte k = 0;

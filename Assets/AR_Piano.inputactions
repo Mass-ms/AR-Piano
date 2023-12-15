@@ -40,7 +40,7 @@
                     "name": "",
                     "id": "ad28bd31-fcd5-497c-9603-e85f5c3c43d5",
                     "path": "<Keyboard>/downArrow",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "TransposeDown",
