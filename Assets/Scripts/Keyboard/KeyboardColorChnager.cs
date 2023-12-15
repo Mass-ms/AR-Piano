@@ -9,7 +9,9 @@ public class KeyboardColorChnager : MonoBehaviour
     public Color colorTension = new Color(255, 255, 0, 94);
     public Color colorAvoid = new Color(255, 0, 0, 94);
     public Color colorOff = new Color(255,255,255,94); // Color when bit is 0
+    public Color colorMelody = new Color(0,0,255,94);
     public ScaleDetector detector;
+    public NoteBitManager noteBitManager;
 
     private void Start()
     {
@@ -17,11 +19,11 @@ public class KeyboardColorChnager : MonoBehaviour
     }
     private void Update()
     {
-        ChangeColorsBasedOnBits(detector.chordNote, detector.tensionNote, detector.avoidNote);
+        ChangeColorsBasedOnBits(detector.chordNote, detector.tensionNote, detector.avoidNote, noteBitManager.getCurrentMelodyBit());
     }
 
     // Use this method to change the colors based on a 16-bit integer
-    public void ChangeColorsBasedOnBits(ushort chord,ushort tension,ushort avoid)
+    public void ChangeColorsBasedOnBits(ushort chord,ushort tension,ushort avoid, ushort melody)
     {
         // Check if there are exactly 12 objects
         if (objectsToColor.Length != 12)
@@ -40,6 +42,7 @@ public class KeyboardColorChnager : MonoBehaviour
             bool isChord = (chord & mask) != 0;
             bool isTension = (tension & mask) != 0;
             bool isAvoid = (avoid & mask) != 0;
+            bool isMelody = (avoid & mask) != 0;
 
             Color colorToApply = colorOff;
             if(isChord)
@@ -53,6 +56,10 @@ public class KeyboardColorChnager : MonoBehaviour
             if (isAvoid)
             {
                 colorToApply = colorAvoid;
+            }
+            if (isMelody)
+            {
+                colorToApply = colorMelody;
             }
 
             // Assume the GameObject has a Renderer component

@@ -7,30 +7,17 @@ public class NoteBitManager : MonoBehaviour
     public ChordDetector chordDetector;
     public ScaleDetector scaleDetector;
     public bool debug = false;
-    /*
-    public static NoteBitManager instance;
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-    }
-    */
-    // %12
-    ushort currentBit = 0b_0000_0000_0000_0000;
-    // Start is called before the first frame update
-
-
-    // Update is called once per frame
-    private void Update()
-    {
-       
-    }
+    private ushort currentBit = 0b_0000_0000_0000_0000;
+    private ushort currentMelodyBit = 0b_0000_0000_0000_0000;
 
     public void initCurrentBit()
     {
         currentBit = 0b_0000_0000_0000_0000;
+        Debug.Log(ToString());
+    }
+    public void initCurrentMelodyBit()
+    {
+        currentMelodyBit = 0b_0000_0000_0000_0000;
         Debug.Log(ToString());
     }
     public void setCurrentBit(ushort NoteNum)
@@ -47,7 +34,22 @@ public class NoteBitManager : MonoBehaviour
             Debug.Log(ToString());
         }
         chordDetector.DetectChordName(currentBit);
-        scaleDetector.DetectScale(currentBit);
+        scaleDetector.DetectScale(currentBit);  
+    }
+
+    public void setCurrentMelodyBit(ushort NoteNum)
+    {
+        ushort bit = 0b_1000_0000_0000_0000;
+
+        ushort shift = (ushort)(NoteNum%12);
+
+        bit = (ushort)(bit >> shift);
+
+        currentMelodyBit = (ushort)(currentMelodyBit | bit);
+        if (debug)
+        {
+            Debug.Log(ToString());
+        }
     }
 
     public void clearCurrentBit(ushort NoteNum) 
@@ -67,19 +69,34 @@ public class NoteBitManager : MonoBehaviour
         scaleDetector.DetectScale(currentBit); 
     }
 
+    public void clearCurrentMelodyBit(ushort NoteNum)
+    {
+        ushort bit = 0b_1000_0000_0000_0000;
+
+        ushort shift = (ushort)(NoteNum % 12);
+
+        bit = (ushort)(bit >> shift);
+
+        currentBit = (ushort)(currentMelodyBit & ~bit);
+        if (debug)
+        {
+            Debug.Log(ToString());
+        }
+    }
+
     public ushort getCurrentBit()
     { return currentBit; }
 
     override public string ToString()
     {
-        string binaryString = Convert.ToString(currentBit, 2).PadLeft(16, '0'); // 16ƒrƒbƒg‚ÌƒoƒCƒiƒŠ•¶Žš—ñ
+        string binaryString = Convert.ToString(currentBit, 2).PadLeft(16, '0'); // 16ï¿½rï¿½bï¿½gï¿½Ìƒoï¿½Cï¿½iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         string formattedBinaryString = "0b_" + InsertUnderscores(binaryString);
         return formattedBinaryString;
     }
 
     static string InsertUnderscores(string binaryString)
     {
-        // 4Œ…–ˆ‚ÉƒAƒ“ƒ_[ƒXƒRƒA‚ð‘}“ü
+        // 4ï¿½ï¿½ï¿½ï¿½ï¿½ÉƒAï¿½ï¿½ï¿½_ï¿½[ï¿½Xï¿½Rï¿½Aï¿½ï¿½}ï¿½ï¿½
         for (int i = binaryString.Length - 4; i > 0; i -= 4)
         {
             binaryString = binaryString.Insert(i, "_");

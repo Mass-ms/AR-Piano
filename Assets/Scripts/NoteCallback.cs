@@ -8,7 +8,7 @@ using TMPro;
 
 sealed class NoteCallback : MonoBehaviour
 {
-    public NoteBitManager noteBitManager;
+    public NoteBitManager chordBitManager;
     public int detectLimit = 60;
     
     void Start()
@@ -43,7 +43,11 @@ sealed class NoteCallback : MonoBehaviour
                 */
                 if (note.noteNumber<=detectLimit)
                 {
-                    noteBitManager.setCurrentBit((ushort)note.noteNumber);
+                    chordBitManager.setCurrentBit((ushort)note.noteNumber);
+                }
+                else
+                {
+                    chordBitManager.setCurrentMelodyBit((ushort)note.noteNumber);
                 }
             };
 
@@ -60,7 +64,14 @@ sealed class NoteCallback : MonoBehaviour
                     )
                 );
                 */
-                noteBitManager.clearCurrentBit((ushort)note.noteNumber);
+                if (note.noteNumber<=detectLimit)
+                {
+                    chordBitManager.clearCurrentBit((ushort)note.noteNumber);
+                }
+                else
+                {
+                    chordBitManager.clearCurrentMelodyBit((ushort)note.noteNumber);
+                }
             };
         };
     }
