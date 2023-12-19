@@ -31,7 +31,8 @@ public class ScaleManager : MonoBehaviour
         var keyboard = Keyboard.current;
         if (keyboard != null)
         {
-            if (keyboard.upArrowKey.wasPressedThisFrame) {
+            if (keyboard.upArrowKey.wasPressedThisFrame) 
+            {
                 transpose = (transpose+1)%12;
                 Key = keylist[isSharp ? 1 : 0, transpose];
                 LoadJson(transpose);
@@ -91,14 +92,14 @@ public class ScaleManager : MonoBehaviour
 
     public string ToString(ushort notes)
     {
-        string binaryString = Convert.ToString(notes, 2).PadLeft(16, '0'); // 16ƒrƒbƒg‚ÌƒoƒCƒiƒŠ•¶Žš—ñ
+        string binaryString = Convert.ToString(notes, 2).PadLeft(16, '0'); // 16ï¿½rï¿½bï¿½gï¿½Ìƒoï¿½Cï¿½iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         string formattedBinaryString = "0b_" + InsertUnderscores(binaryString);
         return formattedBinaryString;
     }
 
     public string InsertUnderscores(string binaryString)
     {
-        // 4Œ…–ˆ‚ÉƒAƒ“ƒ_[ƒXƒRƒA‚ð‘}“ü
+        // 4ï¿½ï¿½ï¿½ï¿½ï¿½ÉƒAï¿½ï¿½ï¿½_ï¿½[ï¿½Xï¿½Rï¿½Aï¿½ï¿½}ï¿½ï¿½
         for (int i = binaryString.Length - 4; i > 0; i -= 4)
         {
             binaryString = binaryString.Insert(i, "_");
