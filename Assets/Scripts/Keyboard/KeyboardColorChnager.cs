@@ -15,7 +15,7 @@ public class KeyboardColorChnager : MonoBehaviour
 
     private void Start()
     {
-        ChangeColorsBasedOnBits(0,0,0);
+        ChangeColorsBasedOnBits(0,0,0,0);
     }
     private void Update()
     {

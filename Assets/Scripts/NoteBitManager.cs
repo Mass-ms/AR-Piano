@@ -87,6 +87,9 @@ public class NoteBitManager : MonoBehaviour
     public ushort getCurrentBit()
     { return currentBit; }
 
+    public ushort getCurrentMelodyBit()
+    { return currentMelodyBit; }
+
     override public string ToString()
     {
         string binaryString = Convert.ToString(currentBit, 2).PadLeft(16, '0'); // 16�r�b�g�̃o�C�i��������

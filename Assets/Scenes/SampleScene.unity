@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b728ec51e41db4ca42fb62085bb658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteBitManager: {fileID: 675952766}
+  noteBitManager: {fileID: 0}
   detectLimit: 80
 --- !u!114 &675952764
 MonoBehaviour:
@@ -4785,6 +4785,21 @@ PrefabInstance:
       propertyPath: detector
       value: 
       objectReference: {fileID: 675952764}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: colorMelody.a
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: colorMelody.b
+      value: 0.74901974
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: noteBitManager
+      value: 
+      objectReference: {fileID: 675952766}
     - target: {fileID: 8363585153211153866, guid: e4dae279985c90f4eb77fe52907586ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7943,6 +7958,21 @@ PrefabInstance:
       propertyPath: detector
       value: 
       objectReference: {fileID: 675952764}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: colorMelody.a
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: colorMelody.b
+      value: 0.74901974
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: noteBitManager
+      value: 
+      objectReference: {fileID: 675952766}
     - target: {fileID: 8363585153211153866, guid: e4dae279985c90f4eb77fe52907586ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8016,6 +8046,21 @@ PrefabInstance:
       propertyPath: detector
       value: 
       objectReference: {fileID: 675952764}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: colorMelody.a
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: colorMelody.b
+      value: 0.74901974
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692771694180727734, guid: e4dae279985c90f4eb77fe52907586ed,
+        type: 3}
+      propertyPath: noteBitManager
+      value: 
+      objectReference: {fileID: 675952766}
     - target: {fileID: 8363585153211153866, guid: e4dae279985c90f4eb77fe52907586ed,
         type: 3}
       propertyPath: m_LocalPosition.x

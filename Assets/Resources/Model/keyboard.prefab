@@ -319,4 +319,6 @@ MonoBehaviour:
   colorTension: {r: 1, g: 1, b: 0, a: 0.36862746}
   colorAvoid: {r: 1, g: 0, b: 0, a: 0.36862746}
   colorOff: {r: 1, g: 1, b: 1, a: 0.36862746}
+  colorMelody: {r: 0, g: 0, b: 0.74901974, a: 0.36862746}
   detector: {fileID: 0}
+  noteBitManager: {fileID: 0}
