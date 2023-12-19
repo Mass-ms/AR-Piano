@@ -5,49 +5,49 @@
         {
             "ScaleName": "-Melodic Min",
             "DegreeName": "VImM7",
-            "ChordNote": "0b_1000_1000_1100_0000",
+            "ChordNote": "0b_1000_1000_1100_0010",
             "TensionNote": "0b_0010_0010_0001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Dorian b2",
             "DegreeName": "VIIm7",
-            "ChordNote": "0b_0010_0010_0101_0000",
+            "ChordNote": "0b_0010_0010_0101_0010",
             "TensionNote": "0b_0000_1000_1000_0000",
             "AvoidNote": "0b_1000_0000_0000_0000"
         },
         {
             "ScaleName": "-Lydian Aug",
             "DegreeName": "IaugM7",
-            "ChordNote": "0b_1000_1000_1001_0000",
+            "ChordNote": "0b_1000_1000_1001_0010",
             "TensionNote": "0b_0010_0010_0100_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Lydian Dom",
             "DegreeName": "II7",
-            "ChordNote": "0b_1010_0010_0100_0000",
+            "ChordNote": "0b_1010_0010_0100_0010",
             "TensionNote": "0b_0000_1000_1001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Mixolydian b6",
             "DegreeName": "III7",
-            "ChordNote": "0b_0010_1000_1001_0000",
+            "ChordNote": "0b_0010_1000_1001_0010",
             "TensionNote": "0b_1000_0010_0000_0000",
             "AvoidNote": "0b_0000_0000_0100_0000"
         },
         {
             "ScaleName": "-Locrian #2",
             "DegreeName": "IVm7(b5)",
-            "ChordNote": "0b_1000_1010_0100_0000",
+            "ChordNote": "0b_1000_1010_0100_0010",
             "TensionNote": "0b_0010_0000_1001_0000",
             "AvoidNote": "0b_0000_0000_0000_0000"
         },
         {
             "ScaleName": "-Altered",
             "DegreeName": "Vm7(b5)",
-            "ChordNote": "0b_0010_0010_1001_0000",
+            "ChordNote": "0b_0010_0010_1001_0010",
             "TensionNote": "0b_0000_1000_0000_0000",
             "AvoidNote": "0b_1000_0000_0100_0000"
         }
