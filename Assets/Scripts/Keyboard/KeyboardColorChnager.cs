@@ -19,6 +19,8 @@ public class KeyboardColorChnager : MonoBehaviour
     }
     private void Update()
     {
+        //ChangeColorsBasedOnBits(0, 0, 0, 0);
+        Debug.Log(noteBitManager.getCurrentMelodyBit());
         ChangeColorsBasedOnBits(detector.chordNote, detector.tensionNote, detector.avoidNote, noteBitManager.getCurrentMelodyBit());
     }
 
@@ -42,10 +44,14 @@ public class KeyboardColorChnager : MonoBehaviour
             bool isChord = (chord & mask) != 0;
             bool isTension = (tension & mask) != 0;
             bool isAvoid = (avoid & mask) != 0;
-            bool isMelody = (avoid & mask) != 0;
+            bool isMelody = (melody & mask) != 0;
 
             Color colorToApply = colorOff;
-            if(isChord)
+            if (!isMelody)
+            {
+                colorToApply = colorOff;
+            }
+            if (isChord)
             {
                 colorToApply = colorChord;
             }

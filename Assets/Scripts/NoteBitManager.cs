@@ -77,7 +77,7 @@ public class NoteBitManager : MonoBehaviour
 
         bit = (ushort)(bit >> shift);
 
-        currentBit = (ushort)(currentMelodyBit & ~bit);
+        currentMelodyBit = (ushort)(currentMelodyBit & ~bit);
         if (debug)
         {
             Debug.Log(ToString());

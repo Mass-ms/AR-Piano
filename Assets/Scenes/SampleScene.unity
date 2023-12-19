@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b728ec51e41db4ca42fb62085bb658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteBitManager: {fileID: 0}
+  noteBitManager: {fileID: 675952766}
   detectLimit: 80
 --- !u!114 &675952764
 MonoBehaviour:
