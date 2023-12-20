@@ -8,44 +8,49 @@ using UnityEngine.InputSystem.Controls;
 public class KeyboardMover : MonoBehaviour
 {
     private GameObject obj;
+    private Transform _transform;
     //ts = transform scale
+    [SerializeField]
     float ts = 1.0f;
     //rs = rotate scale (degree)
+    [SerializeField]
     float rs = 30f;
+
     void Start()
     {
-        obj = this;
+        obj = this.gameObject;
+        _transform = transform;
     }
     void Update()
     {
-        var keyboard = KeyboardMover.current;
+        var keyboard = Keyboard.current;
         if (keyboard != null)
         {
             //x-y 
             if (keyboard.wKey.wasPressedThisFrame)
             {
-                obj.transform.potision += ts*obj.transform.potision.forward;
+                obj.transform.position += ts*_transform.forward;
             }
             if (keyboard.aKey.wasPressedThisFrame)
             {
-                obj.transform.potision += -ts*obj.transform.potision.right;
+                obj.transform.position += -ts*_transform.right;
             }
             if (keyboard.dKey.wasPressedThisFrame)
             {
-                obj.transform.potision += ts*obj.transform.potision.right;
+                obj.transform.position += ts*_transform.right;
             }
             if (keyboard.sKey.wasPressedThisFrame)
             {
-                obj.transform.potision += -ts*obj.transform.potision.forward;
+                obj.transform.position += -ts*_transform.forward;
             }
             //z
             if (keyboard.qKey.wasPressedThisFrame)
             {
-                obj.transform.potision += ts*obj.transform.potision.up;
+                obj.transform.position += ts*_transform.up;
             }
             if (keyboard.eKey.wasPressedThisFrame)
             {
-                obj.transform.potision += -ts*obj.transform.potision.up;
+                obj.transform.position += -ts*_transform.up;
             }
             //rotation
             if (keyboard.rKey.wasPressedThisFrame)
@@ -59,11 +64,11 @@ public class KeyboardMover : MonoBehaviour
             //scale up/down
             if (keyboard.xKey.wasPressedThisFrame)
             {
-                obj.transform.localScale += new vector3(ts,ts,ts);
+                obj.transform.localScale += new Vector3(ts,ts,ts);
             }
             if (keyboard.zKey.wasPressedThisFrame)
             {
-                obj.transform.localScale -= new vector3(ts,ts,ts);
+                obj.transform.localScale -= new Vector3(ts,ts,ts);
             }
 
         }

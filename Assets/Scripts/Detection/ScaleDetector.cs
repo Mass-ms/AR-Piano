@@ -16,24 +16,13 @@ public class ScaleDetector : MonoBehaviour
     public int emoticonID = 0;
     public bool debug = false;
 
-    const private ushort bitMask = 0b_1111_1111_1111_0000;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private ushort bitMask = 0b_1111_1111_1111_0000;
 
     public void DetectScale(ushort currentBit)
     {
         foreach (Scale scale in scaleManager.scaleList)
         {
-            if (scale.ChordNote & bitMask == currentBit)
+            if ((scale.ChordNote & bitMask) == currentBit)
             {
                 scaleName = scale.ScaleName;
                 degreeName = scale.DegreeName;
@@ -45,7 +34,7 @@ public class ScaleDetector : MonoBehaviour
                     Debug.Log($"Scale: {scale.ScaleName}, Degree:{scale.DegreeName}");
                 }
                 OnChordDetected?.Invoke();
-                emoticonID = scale.ChordNote ~& bitMask;
+                emoticonID = (scale.ChordNote & ~bitMask);
                 break;
             }
             
